@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Leaflet map styles */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+}
+
+.leaflet-popup-content {
+  margin: 10px;
+  min-width: 200px;
+}
+
+.hover-shadow {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Custom scrollbar for split view list */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Fix for dropdown visibility */
+.navbar-nav {
+  /* Remove overflow restrictions */
+  overflow: visible !important;
+}
+
+.dropdown-menu {
+  /* Ensure dropdown appears above other content */
+  z-index: 1050;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* For mobile devices */
+@media (max-width: 991.98px) {
+  .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: rgba(40, 167, 69, 0.95);
+    border: none;
+    padding-left: 1.5rem;
+  }
+  
+  .dropdown-menu .dropdown-item {
+    color: white;
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+  }
+  
+  .dropdown-divider {
+    border-top-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+/* Desktop dropdown positioning */
+@media (min-width: 992px) {
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  
+  /* Ensure dropdowns aren't cut off */
+  .navbar-nav {
+    overflow: visible !important;
+  }
+  
+  .nav-item.dropdown {
+    position: relative;
+  }
+}
+
+.hover-shadow {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.hover-shadow:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}

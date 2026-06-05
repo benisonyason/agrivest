@@ -1,0 +1,13 @@
+# Create requirements.txt
+@"
+Django==5.0.3
+djangorestframework==3.14.0
+djangorestframework-simplejwt==5.3.0
+django-filter==24.2
+django-cors-headers==4.3.1
+pandas==2.2.1
+openpyxl==3.1.2
+"@ | Out-File -FilePath requirements.txt -Encoding utf8
+
+# Install from requirements file
+pip install -r requirements.txt

@@ -1,0 +1,64 @@
+﻿# ========== PYTHON ==========
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# ========== DJANGO ==========
+*.log
+*.pot
+*.pyc
+local_settings.py
+media/
+staticfiles/
+.DS_Store
+*.pid
+coverage/
+*.mo
+
+# ========== REACT / NODE ==========
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+dist-ssr/
+*.local
+
+# ========== ENVIRONMENT VARIABLES ==========
+.env
+.env.local
+.env.production
+.env.development
+
+# ========== IDE ==========
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ========== BACKUP FILES ==========
+*.backup
+*.bak
+*.old
+*.tmp
+*.backup.*
+
+# ========== SECURITY ==========
+*.pem
+*.key
+*.cert
+
+# ========== NOTE: SQLite IS INCLUDED ==========
+# db.sqlite3 is NOT excluded - it will be tracked by Git
+# Do NOT add *.sqlite3 or db.sqlite3 to this file
