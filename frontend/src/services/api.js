@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api',  // Use full URL for debugging
+  baseURL: 'https://agrivest-backend-7rwn.onrender.com/api',  // Use full URL for debugging
   timeout: 10000,
   headers: {
     'Content-Type': 'application/json',
